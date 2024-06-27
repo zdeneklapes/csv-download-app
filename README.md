@@ -2,7 +2,7 @@
 
 ## Configuration
 
-Move src/environments/environment.sample.ts to src/environments/environment.ts and set the ``XIMILAR_APIKEY`` to your ximilar api key.
+Move `src/environments/environment.sample.ts` to `src/environments/environment.ts` and set the ``XIMILAR_APIKEY`` to your ximilar api key.
 
 ## Development server
 
