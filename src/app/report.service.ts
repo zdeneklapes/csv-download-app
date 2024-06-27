@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
+// import * as process from "node:process";
+import {environment} from "../environments/environment";
 
 @Injectable({
   providedIn: 'root'
@@ -9,7 +11,7 @@ export class ReportService {
   private baseUrl = 'https://api.ximilar.com/account/v2/reports/';
   private httpOptions = {
     headers: new HttpHeaders({
-      'Authorization': 'Token c35e00ef3e98f9bce589ef20f7532e9b8d2a4475'
+      'Authorization': `Token ${environment.XIMILAR_APIKEY}`
     })
   };
 
