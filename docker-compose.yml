@@ -7,7 +7,6 @@ services:
     entrypoint: /bin/bash -c "npx ng serve --host 0.0.0.0"
     volumes:
       - ./:/opt/frontend:Z
-      - ./ximilar/dist:/opt/frontend/dist:Z
     tty: true
     ports:
       - "4200:4200"
